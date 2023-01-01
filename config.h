@@ -65,5 +65,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime, "%s",           "%F %T" },
+  { wifi_perc, "  %s%% ",      "wlp2s0"},
+  { netspeed_rx, "%sb/s | ",      "wlp2s0"},
+  { ram_perc, "﬙ %s%% | ",       NULL},
+  { run_command, " %s | ",      "pamixer --get-volume-human"},
+	{ datetime, " %s ",         "%a %b %d  %r" },
 };
