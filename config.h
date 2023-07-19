@@ -67,7 +67,8 @@ static const struct arg args[] = {
 	/* function format          argument */
   { wifi_perc, "  %s%% ",      "wlp2s0"},
   { netspeed_rx, "%sb/s | ",      "wlp2s0"},
-  { ram_perc, "﬙ %s%% | ",       NULL},
+  { ram_used, "RAM: %s / ",       NULL},
+  { ram_total, "%s | ",       NULL},
   { run_command, " %s | ",      "pamixer --get-volume-human"},
-	{ datetime, " %s ",         "%a %b %d  %r" },
+	{ datetime, " %s ",         "%a %b %d |  %r" },
 };
